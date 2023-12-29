@@ -1,0 +1,126 @@
+/* Chatbot.css */
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* Chatbot container styles */
+.chatbot-container {
+  max-width: 800px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  font-family: "Arial", sans-serif;
+}
+
+/* Chat window styles */
+.chat-window {
+  height: 100%;
+  padding: 10px;
+  overflow-y: scroll;
+  /* width: 100%; */
+  min-height: 400px;
+}
+
+/* Message styles */
+.message {
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  max-width: 70%;
+}
+
+/* User message styles */
+.user {
+  background-color: #4caf50;
+  color: #fff;
+  align-self: flex-end;
+}
+
+/* Bot message styles */
+.bot {
+  background-color: #2196f3;
+  color: #fff;
+  align-self: flex-start;
+}
+
+/* Input area styles */
+.input-area {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+/* Input text field styles */
+.input-area input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 8px;
+  outline: none;
+}
+
+/* Send button styles */
+.input-area button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2196f3;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for send button */
+.input-area button:hover {
+  background-color: #0e80b1;
+}
+
+/* Styling for the chatbot container */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  width: 100%;
+}
+.message {
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  max-width: 70%;
+}
+
+.user {
+  background-color: #4caf50;
+  color: white;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.bot {
+  background-color: #2196f3;
+  color: white;
+  align-self: flex-start;
+}
+.typing-indicator {
+  display: inline-block;
+  width: 20px;
+  animation: typing 0.5s infinite alternate;
+}
+
+@keyframes typing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
